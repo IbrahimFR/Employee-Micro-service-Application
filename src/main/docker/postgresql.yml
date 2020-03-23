@@ -1,0 +1,11 @@
+version: '2'
+services:
+  employeemicroservices-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/EmployeeMicroServices/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=EmployeeMicroServices
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
